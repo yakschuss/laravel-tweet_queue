@@ -9,11 +9,9 @@
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the Closure to execute when that URI is requested.
 |
-*/
+ */
 
-Route::get('/', 'TweetController@indexTweets');
+Route::get('/', 'TweetController@index');
 
-Route::get('tweets', function()
-{
-      return 'Tweets!';
-});
+Route::resource('tweets', 'TweetController');
+

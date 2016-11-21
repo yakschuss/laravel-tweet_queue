@@ -1,3 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+#tweet-index {
+  background-color: #55acee;
+}
 .header-title {
+  color: white;
   text-align: center;
+}
+
+
+.create-new-tweet {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input-fields {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tweet-body {
+  width: 40%;
+  height: 50px;
+  align-self: center;
+}
+.tweet-date {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.submit-field {
+  display: flex;
+  justify-content: center;
+}
+.tweet-submit {
+  background-color: #55acee;
+  color: white;
+  height: 30px;
+  border: 1px solid white;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.tweet-submit:hover {
+  color: #55acee;
+  background-color: white;
+}
+
+.tweets-collection {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tweet {
+  background-color: white;
+  height: 120px;
+  width: 30%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 4px #ccc solid;
+  border-radius: 2%;
+}
+
+.rendered-tweet-body {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2px;
+  margin-top: 2px;
+
+}
+
+.non-tweet-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rendered-tweet-time {
+  margin-left: 10px;
+}
+
+.delete-button {
+  color: white;
+  background-color: red;
+  border: 1px red solid;
+  height: 30px;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.delete-link {
+  text-decoration: none;
+  color: white;
+}
+
+.delete-link:hover {
+  color: red;
+}
+
+.delete-button:hover + .delete-link {
+  color: red;
+}
+.delete-button:hover {
+  background-color: white;
+  color: red;
+}
+
+.date-label {
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
 }

@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => 'forge',
-			'username'  => 'forge',
+			'username'  => '',
 			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
@@ -66,8 +66,8 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'forge',
-			'username' => 'forge',
+			'database' => 'tweet_queue_development',
+			'username' => 'jackschuss',
 			'password' => '',
 			'charset'  => 'utf8',
 			'prefix'   => '',
