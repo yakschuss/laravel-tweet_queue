@@ -41,8 +41,8 @@
             <div class="non-tweet-body">
               <div class="rendered-tweet-time">{{ $value->time_to_be_scheduled}}</div>
               <button class="delete-button">
-              <a class="delete-link" href="javascript:deleteTweet('{{ $value->id }}');">Delete</a>
-            </button>
+                <a class="delete-link" href="javascript:deleteTweet('{{ $value->id }}');">Delete</a>
+              </button>
             </div>
           </div>
         @endforeach
